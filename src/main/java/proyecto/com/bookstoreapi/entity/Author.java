@@ -17,8 +17,7 @@ public class Author {
     @Column
     public String contact;
     @OneToMany(
-            cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY)
+           cascade = CascadeType.ALL, fetch = FetchType.LAZY
     )
     private List<Book>books;
 }
